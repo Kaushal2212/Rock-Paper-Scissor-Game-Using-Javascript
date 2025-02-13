@@ -1,0 +1,132 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(Background.jpg);
+}
+
+.container{
+    height: 320px;
+    width: 230px;
+    background-color: #e0f7fa;
+    border: 1px solid #4dd0e1;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    border-radius: 3%;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.heading{
+    padding-top: 2px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Button styling */
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    border-radius: 20%;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #ddd;
+}
+
+/* Choice-specific buttons */
+button.rock {
+    background-color: #ff6f61;
+    color: white;
+    
+}
+
+button.paper {
+    background-color: #6ab7ff;
+    color: white;
+}
+
+button.scissors {
+    background-color: #8bc34a;
+    color: white;
+}
+
+/* Game result display */
+.result {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border: 1px solid #4dd0e1;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+button::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.rock::after {
+    content: "Rock";
+}
+
+.paper::after {
+    content: "Paper";
+}
+
+.scissors::after {
+    content: "Scissors";
+}
+
+
+button:hover::after {
+    opacity: 1;
+    font-size: 20px;
+}
+
+.auto-play-button{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6f61, #ff9966);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
