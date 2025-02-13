@@ -30,6 +30,6 @@
 </p>
 
 <p>
-  <b>License</b><br>
+  <b>CopyRight</b><br>
   @2025 Kaushal B. Kadam
 </p>
