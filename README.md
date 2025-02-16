@@ -21,7 +21,7 @@
 
 <p>
   <b>Getting Started</b><br>
-  - Clone the repository: <code>git clone https://github.com/your-username/rock-paper-scissors</code><br>
+  - Clone the repository: <code>git clone https://github.com/your-username/Rock-Paper-Scissor-Game-Using-Javascript</code><br>
   - Navigate to the project directory: <code>cd rock-paper-scissors</code><br>
   - Open <code>index.html</code> in a browser (if using plain HTML, CSS, JS).<br>
   - If using React: Install dependencies with <code>npm install</code>.<br>
